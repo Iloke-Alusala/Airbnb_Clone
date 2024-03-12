@@ -15,7 +15,7 @@ export default function Home({ exploreData , cardsData}) {
     <div>
       <Head>
         <title>
-          Chevo's Airbnb
+          Chevo Airbnb
         </title>
       </Head>
       <Header />
