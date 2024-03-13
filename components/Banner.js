@@ -4,7 +4,7 @@ import Image from "next/legacy/image"
 function Banner() {
   return (
     // Make parent relative so that when using absolute for child
-    // it doesn't fly off into location
+    // it doesn`t fly off into location
     <div className="relative h-[300px] sm:h-[400px] lg:h-[500px]
     xl:h-[600px] 2xl:h-[700px]">
          <Image 
