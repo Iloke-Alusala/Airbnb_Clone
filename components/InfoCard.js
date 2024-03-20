@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from "next/legacy/image"
+import Image from "next/image"
 import { HeartIcon } from '@heroicons/react/24/outline'
 import {StarIcon} from '@heroicons/react/24/outline'
 
@@ -8,7 +8,13 @@ function InfoCard({ img, location, title, description, star, price, total }) {
     <div className='flex'>
       <div className='relative h-24 w-40 md:h-52 md:w-80 
       flex-shrink-0'>
-        <Image src={img} layout='fill' objectFit='cover'></Image>
+        <Image
+          src={img}
+          fill
+          sizes="100vw"
+          style={{
+            objectFit: "cover"
+          }}></Image>
       </div>
 
       <div className='flex flex-col flex-grow pl-5'>
@@ -22,8 +28,7 @@ function InfoCard({ img, location, title, description, star, price, total }) {
         <div className='border-b w-10 pt-2'></div>
       </div>
     </div>
-
-  )
+  );
 }
 
 export default InfoCard

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Image from "next/legacy/image"
+import Image from "next/image"
 import { 
   MagnifyingGlassCircleIcon,
   GlobeAltIcon,
@@ -55,10 +55,12 @@ function Header({placeholder}) {
           <Image
             onClick={() => router.push("/")}
             src="https://links.papareact.com/qd3"
-            layout ="fill"
-            objectFit='contain'
-            objectPosition='left'
-           />
+            fill
+            sizes="100vw"
+            style={{
+              objectFit: "contain",
+              objectPosition: "left"
+            }} />
         </div>
         {/* Middle - Search */}
         <div className="flex items-center md:border-2 
@@ -117,8 +119,7 @@ function Header({placeholder}) {
           )
         }
     </header>
-    
-  )
+  );
 }
 
 export default Header
