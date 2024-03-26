@@ -434,15 +434,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-##  Acknowledgments
-
-- List any resources, contributors, inspiration, etc. here.
-
-[**Return**](#-overview)
-
----
-
-
+## Extra Information
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
