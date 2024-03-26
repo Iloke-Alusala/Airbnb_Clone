@@ -4,6 +4,7 @@ import { useRouter } from 'next/router'
 import React from 'react'
 import { format } from 'date-fns';
 import InfoCard from '@/components/InfoCard';
+import Mappy from '@/components/Mappy';
 
 function Search({searchResults}) {
 
@@ -16,7 +17,7 @@ function Search({searchResults}) {
 
   return (
     <div className='bg-white'>
-      <Header placeholder={`${location} | ${range} | $ {noOfGuests} guests`}/>
+      <Header placeholder={`${location} | ${range} | ${noOfGuests} guests`}/>
 
         <main className='flex'>
           <section className='flex-grow pt-14 px-6'>
@@ -50,9 +51,14 @@ function Search({searchResults}) {
               ))}
             </div>
           </section>
+
+          <section
+          className='hidden xl:inline-flex xl:w-[600px]'>
+            <Mappy searchResults = {searchResults}/>
+          </section>
         </main>
 
-      <Footer />
+      <Footer className="absolute"/>
     </div>
   )
 }
