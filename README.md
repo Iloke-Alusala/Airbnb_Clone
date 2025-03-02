@@ -31,7 +31,7 @@
 - [ License](#-license)
 </details>
 <hr>
-
+##  Note(Does Not Support Dark Mode Crome Setting)
 ##  Overview
 
 The Airbnb project is a web application designed to emulate the functionality of the popular accommodation rental platform Airbnb. Built using Next.js, React, and Tailwind CSS, the project aims to provide users with a familiar and intuitive experience for browsing and booking accommodations.
